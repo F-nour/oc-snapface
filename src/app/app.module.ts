@@ -2,7 +2,7 @@ import { registerLocaleData } from '@angular/common';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import localeFr from '@angular/common/locales/fr';
 
-registerLocaleData(localeFr);
+import { httpInterceptorProviders } from './interceptor';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -35,7 +35,11 @@ import { NewFaceSnapComponent } from './new-face-snap/new-face-snap.component';
     HttpClientModule
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'fr-FR' }
+    {
+      provide: LOCALE_ID,
+      useValue: 'fr-FR'
+    },
+    httpInterceptorProviders
   ],
   bootstrap: [AppComponent]
 })
