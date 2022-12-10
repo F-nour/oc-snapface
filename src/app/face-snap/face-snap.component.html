@@ -19,7 +19,7 @@
     <small
       >Nombre de snaps:
       <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ', 0)' }"
-        >{{ faceSnap.snaps }}
+        >{{ faceSnap.snaps | number: '1.0-1' }}
       </span>
     </small>
   </p>
