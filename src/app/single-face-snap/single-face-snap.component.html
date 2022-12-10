@@ -16,7 +16,7 @@
   </p>
   <p *ngIf(faceSnap.location)>Photo prise à {{ faceSnap.location }}</p>
   <p>
-    <button (click)="onSnap()">{{ buttonText }}</button>
+    <button (click)="onSnap(faceSnap.id)">{{ buttonText }}</button>
     <small
       >Nombre de snaps:
       <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ', 0)' }"
