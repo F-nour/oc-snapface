@@ -13,7 +13,7 @@ export class AppComponent {
   ngOnInit(): void {
     this.faceSnaps = [
       {
-        title: 'Archibald',
+        title: 'Kamel',
         description: 'Mon meilleur ami depuis tout petit !',
         imageUrl: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
         createdDate: new Date(),
