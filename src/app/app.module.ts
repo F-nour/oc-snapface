@@ -1,6 +1,8 @@
 import { registerLocaleData } from '@angular/common';
 import { LOCALE_ID, NgModule } from '@angular/core';
-import * as fr from '@angular/common/locales/fr';
+import localeFr from '@angular/common/locales/fr';
+
+registerLocaleData(localeFr);
 
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -33,12 +35,12 @@ import { NewFaceSnapComponent } from './new-face-snap/new-face-snap.component';
     HttpClientModule
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'fr-FR'}
+    { provide: LOCALE_ID, useValue: 'fr-FR' }
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor() {
-    registerLocaleData(fr.default);
+    registerLocaleData(localeFr);
   }
 }
