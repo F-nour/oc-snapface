@@ -1,4 +1,4 @@
-<div class="face-snap-cards">
+<div class="face-snap-card">
   <h2>{{ faceSnap.title }}</h2>
   <div>
     <img src="{{ faceSnap.imageUrl }}" alt="{{ faceSnap.title }}" />
@@ -7,11 +7,14 @@
   <p>
     <small>Mis en ligne le {{ faceSnap.createdDate }}</small>
   </p>
-  <p *ngIf(faceSnap.location) >
-    Photo prise à {{ faceSnap.location }}
-  </p>
+  <p *ngIf(faceSnap.location)>Photo prise à {{ faceSnap.location }}</p>
   <p>
     <button (click)="onSnap()">{{ buttonText }}</button>
-    <small>Nombre de snaps: {{ faceSnap.snaps }}</small>
+    <small
+      >Nombre de snaps:
+      <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ', 0)' }"
+        >{{ faceSnap.snaps }}
+      </span>
+    </small>
   </p>
 </div>
