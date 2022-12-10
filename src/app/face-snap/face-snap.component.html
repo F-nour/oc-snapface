@@ -8,7 +8,10 @@
   </div>
   <p>{{ faceSnap.description }}</p>
   <p>
-    <small>Mis en ligne le {{ faceSnap.createdDate }}</small>
+    <small>
+      Mis en ligne
+      {{ faceSnap.createdDate | date : "à HH:mm, le d MMMM yyyy" }}
+    </small>
   </p>
   <p *ngIf(faceSnap.location)>Photo prise à {{ faceSnap.location }}</p>
   <p>
