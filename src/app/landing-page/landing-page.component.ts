@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-landing-page',
@@ -14,7 +15,7 @@ export class LandingPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmitForm(): void {
-    console.log(this.userEmail);
+  onSubmitForm(form: NgForm): void {
+    console.log(form.value);
   }
 }
