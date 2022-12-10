@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
-This project is an autolearning project with [OpenClassRoom's courses](https://openclassrooms.com/fr/courses/7471261-debutez-avec-angular).
+This project is an autolearning project with this [OpenClassRoom's courses](https://openclassrooms.com/fr/courses/7471261-debutez-avec-angular) and this [advanced OpenClassRoom's courses](https://openclassrooms.com/fr/courses/7471271-completez-vos-connaissances-sur-angular).
 
 ## Development server
 
