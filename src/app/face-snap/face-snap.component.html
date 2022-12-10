@@ -5,7 +5,10 @@
   </div>
   <p>{{ faceSnap.description }}</p>
   <p>
-    <small>Mis en ligne le {{ faceSnap.creationDate }}</small>
+    <small>Mis en ligne le {{ faceSnap.createdDate }}</small>
+  </p>
+  <p *ngIf(faceSnap.location) >
+    Photo prise à {{ faceSnap.location }}
   </p>
   <p>
     <button (click)="onSnap()">{{ buttonText }}</button>
