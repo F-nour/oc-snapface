@@ -1,9 +1,10 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { CommonModule, registerLocaleData } from '@angular/common';
+import { AppRoutingModule } from '../app-routing.module';
 import { httpInterceptorProviders } from './interceptor';
 import * as fr from '@angular/common/locales/fr';
 import { HeaderComponent } from './components/header/header.component';
-import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -13,7 +14,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   exports: [
     HeaderComponent
