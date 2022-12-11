@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { CoreModule } from './core/core.module';
 import { AppComponent } from './app.component';
-import { FaceSnapsModule } from './face-snaps/face-snaps.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
 
 
@@ -17,7 +16,6 @@ import { LandingPageModule } from './landing-page/landing-page.module';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    FaceSnapsModule,
     LandingPageModule
   ],
   providers: [],
